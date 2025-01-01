@@ -8,15 +8,16 @@ div {
 }
 
 
-
 .center {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 
-.banner {
+.banner > h1 {
   text-align: center;
+  font-size: 48px;
+  font-weight: 500;;
 }
 
 .listsContainer  {
