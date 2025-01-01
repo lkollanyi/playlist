@@ -1,0 +1,23 @@
+.searchForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox {
+    min-width: 250px;
+    min-height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(93, 64, 212);
+}
+
+.searchBox:focus {
+    outline: none;
+    border: 1px solid rgb(93, 64, 212);
+}
+
+button {
+    width: fit-content;
+}

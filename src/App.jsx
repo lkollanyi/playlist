@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='app'>
       <div className="banner">
-        <h1 className='center'>Spotify Playlist Maker</h1>
+        <h1 className='center'>Spotify Playlist Builder</h1>
       </div>
       <main>
         <div className="searchContainer center">
