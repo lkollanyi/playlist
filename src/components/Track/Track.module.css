@@ -1,0 +1,50 @@
+.trackContainer {
+    width: 320px;
+    padding: 5px;
+    margin: 0px 10px;
+    border: none;
+    background-color: rgb(20, 20, 65, 0.85);
+    color: rgb(215, 215, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+
+  
+
+  .trackInfo {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 3px;
+    font-family: 'Poppins', monospace;
+    
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+
+  .artist {
+    font-size: 12px;
+
+  }
+
+  .button {
+    font-size: 20px;
+    color: lightgray;
+    background-color: rgb(144, 238, 144, 0);
+    border: none;
+    border-radius: 0;
+  }
+
+  .button:hover {
+    color: white;
+  }
+
+
+  

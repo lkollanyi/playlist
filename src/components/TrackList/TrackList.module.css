@@ -1,0 +1,14 @@
+.trackList {
+    display: flex;
+    flex-direction: column;
+}
+
+.track + .track::before {
+    content: "";
+    display: block;
+    height: 1px !important;
+    width: auto;
+    margin: 0px  10px;
+    background-color: rgb(51, 51, 73);
+    border: none;
+  }
