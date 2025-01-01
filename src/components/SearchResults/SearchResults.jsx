@@ -5,7 +5,7 @@ import styles from './SearchResults.module.css';
 export default function SearchResults() {
   return (
     <div>
-        <h2>SearchResults</h2>
+        <h2>Results</h2>
         <TrackList/>
     </div>
   )
