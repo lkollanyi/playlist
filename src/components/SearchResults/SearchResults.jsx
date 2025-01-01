@@ -4,8 +4,8 @@ import styles from './SearchResults.module.css';
 
 export default function SearchResults() {
   return (
-    <div>
-        <h2>Results</h2>
+    <div className={styles.container}>
+        <h2 className={styles.title}>Results</h2>
         <TrackList/>
     </div>
   )
