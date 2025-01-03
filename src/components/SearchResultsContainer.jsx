@@ -1,10 +1,10 @@
 import React from 'react';
 import SearchResults from './SearchResults/SearchResults';
 
-export default function SearchResultsContainer() {
+export default function SearchResultsContainer({results}) {
   return (
     <div>
-        <SearchResults/>
+        <SearchResults results={results}/>
     </div>
   )
 }
