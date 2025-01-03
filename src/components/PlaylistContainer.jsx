@@ -1,10 +1,10 @@
 import React from 'react';
 import Playlist from './Playlist/Playlist';
 
-export default function PlaylistContainer({playlist}) {
+export default function PlaylistContainer({playlist, name}) {
   return (
     <div>
-        <Playlist playlist={playlist}/>
+        <Playlist playlist={playlist} name={name}/>
     </div>
   )
 }

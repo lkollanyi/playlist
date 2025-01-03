@@ -1,10 +1,10 @@
 import React from 'react';
 import SearchResults from './SearchResults/SearchResults';
 
-export default function SearchResultsContainer({results}) {
+export default function SearchResultsContainer({results, onAddTrack, playlist}) {
   return (
     <div>
-        <SearchResults results={results}/>
+        <SearchResults results={results}  onAddTrack={onAddTrack} playlist={playlist}/>
     </div>
   )
 }

@@ -28,17 +28,15 @@ const mockData = [
     songId: 973,
   },
   {
-    title: 'Track 3',
-    artist: 'Artist 3',
-    album: 'Album 3',
+    title: 'Track 4',
+    artist: 'Artist 4',
+    album: 'Album 4',
     id: 4,
     songId: 231,
   }
 ];
 
-const mockPlaylist = {
-  name: "no name",
-  tracks: [
+const mockPlaylist = [
     {
       title: 'Track 3',
       artist: 'Artist 3',
@@ -47,18 +45,28 @@ const mockPlaylist = {
       songId: 973,
     },
     {
-      title: 'Track 3',
-      artist: 'Artist 3',
-      album: 'Album 3',
+      title: 'Track 4',
+      artist: 'Artist 4',
+      album: 'Album 4',
       id: 4,
       songId: 231,
     }
-  ],
-}
+  ]
+
+const mockName = 'no name';
 
 function App() {
   const [results, setResults] = useState(mockData);
   const [playlist, setPlaylist] = useState(mockPlaylist);
+  const [name, setName] = useState(mockName);
+
+  function handleAddTrack(track) {
+    if (playlist.filter((t) => t.id === track.id).length > 0) {
+      return;
+    } else {
+      setPlaylist([...playlist, track]);
+    };
+  };
   
 
 
@@ -72,8 +80,8 @@ function App() {
           <SearchBar />
         </div>
         <div className="listsContainer">
-          <SearchResultsContainer results={results}/>
-          <PlaylistContainer playlist={playlist}/>
+          <SearchResultsContainer results={results}  onAddTrack={handleAddTrack} playlist={playlist}/>
+          <PlaylistContainer playlist={playlist} name={name} />
         </div>
       </main>
     </div>
