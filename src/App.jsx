@@ -67,6 +67,10 @@ function App() {
       setPlaylist([...playlist, track]);
     };
   };
+
+  function handleRemoveTrack(track) {
+    setPlaylist(playlist.filter((t) => t.id !== track.id));
+  }
   
 
 
@@ -81,7 +85,7 @@ function App() {
         </div>
         <div className="listsContainer">
           <SearchResultsContainer results={results}  onAddTrack={handleAddTrack} playlist={playlist}/>
-          <PlaylistContainer playlist={playlist} name={name} />
+          <PlaylistContainer playlist={playlist} name={name} onRemoveTrack={handleRemoveTrack}/>
         </div>
       </main>
     </div>
